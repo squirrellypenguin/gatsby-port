@@ -1,0 +1,51 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.com/docs/gatsby-config/
+ */
+
+module.exports = {
+  /* Your site config here */
+  siteMetadata: {
+    title: "My New Blog",
+    description: "This is my awesome blog I made from scratch!",
+    cheese: "gouda"
+  },
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `json`,
+        path: `${__dirname}/src/json/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown`,
+        path: `${__dirname}/src/mark/`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          'PT Mono',
+          'Poppins',
+        ],
+        display: 'swap'
+    },
+  },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-fontawesome-css`,
+    `gatsby-plugin-web-font-loader`,
+  ],
+}
