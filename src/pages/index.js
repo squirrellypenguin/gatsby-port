@@ -10,7 +10,10 @@ export default function Blog() {
     <Layout>
       <div></div>
       <div id="hero">
-      <RedH1>Hello World!</RedH1>
+      <h1 className="hero-title">It's all about:</h1>
+      <h1 className="hero-subtitle"><code>$ ./build && make</code></h1>
+      <h1 className="hero-caption">What can we develop together?</h1>
+      <p>VVV look down for more</p>
       </div>
       <div className="parent">
       <div className="div1"> 
@@ -20,7 +23,8 @@ export default function Blog() {
       </div>
       <div className="div3"> 
       <p>
-      I leverage multiple languages and frameworks to execute projects to create intelligent online software tailored to the evolving demands on the moment.       </p>
+      I execute projects that leverage multiple languages and frameworks to create intelligent online software tailored to the evolving demands on the moment.
+      </p>
       </div>
  
       <div className="div4"> 

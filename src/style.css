@@ -53,8 +53,15 @@ nav a:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
 }
-
+main {
+    
+    margin-bottom: 75px;
+}
+.hero-title {
+    margin-top: 200px;
+}
 #footer {
+    margin-top: 100px;
     overflow: hidden;
     background-color: #333;
     position: fixed;

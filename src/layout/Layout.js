@@ -32,7 +32,7 @@ const Layout = props => {
       
         </main>
       
-      <footer id="footer">
+      <footer className="footer" id="footer">
         <h1 className="color-primary-0 ">Left</h1>
         <div class="branding">
         <FontAwesomeIcon icon={['fab','github']} />
